@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloccocentrale{
+    padding: 20px;
+    position: relative;
+}
+
+.dot    {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+.dot i{
+color: white;
+margin: 0 10px;
+}
