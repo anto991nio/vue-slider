@@ -16,7 +16,7 @@
     <div id="root">
         <div class="container">
             <div class="arrowleft">
-                <i class="fa fa-chevron-circle-left fa-4x" aria-hidden="true" @click="funzioneClickLeft"></i>
+                <i class="fa fa-chevron-circle-left fa-4x" aria-hidden="true" @click="funzioneClickLeft" tabindex = "-1" @keyup.left="funzioneClickLeft" ></i>
 
             </div>
 
@@ -32,7 +32,7 @@
             </div>
 
             <div class="arrowright">
-                <i class="fa fa-chevron-circle-right fa-4x" aria-hidden="true" @click="funzioneClickRight"></i>
+                <i class="fa fa-chevron-circle-right fa-4x" aria-hidden="true" @click="funzioneClickRight" tabindex = "-1" @keyup.right="funzioneClickRight"></i>
             </div>
         </div>
     </div>

@@ -1,4 +1,10 @@
 
+const tastoSinistro = document.getElementById("tastoSinistro")
+
+
+
+
+
 
 const app = new Vue(
     {
@@ -10,10 +16,12 @@ const app = new Vue(
             miaClasse3: "",
             timer: 0,
             
+            
+            
         },
         methods:{
             funzioneClickRight:function(){
-                if(this.immagine ==="1.jfif"){
+                if(this.immagine ==="1.jfif" ){
                     this.immagine = "2.jfif";
                     this.miaClasse2 = "coloreWhite";
                     this.miaClasse1 = "";
@@ -36,6 +44,7 @@ const app = new Vue(
                  
             },
             funzioneClickLeft:function(){
+                
                 if(this.immagine ==="3.jfif"){
                     this.immagine = "2.jfif";
                     this.miaClasse3 = "";
@@ -84,6 +93,7 @@ const app = new Vue(
                 }, 3000);
            
             }
+            
                 
             
             
@@ -91,3 +101,19 @@ const app = new Vue(
         }
         
     })
+
+
+    //esempio florian
+/* 
+     changeImg(direction){
+        let newIndex = this.activeImg + direction;
+         if(newIndex < 0){
+             newIndex = this.immagine.length-1;
+         }else if(newIndex > ( this.immagine.length-1)){
+             newIndex = 0
+         }
+
+         this.activeImg = newIndex
+     } */
+
+    
